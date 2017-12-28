@@ -30,7 +30,7 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-	border:  5px solid #fff;
+	border:  0px solid #fff;
 	left: -5px;
 	background: #fff;
 
@@ -45,7 +45,7 @@
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
 	position: absolute;
-	bottom: -30px;
+	top: 5px;
 	width: 100%;
 }
 

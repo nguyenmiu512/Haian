@@ -7,11 +7,9 @@
     <title>Hai An Hotel</title>
 
     <!-- jQuery -->
-    <script src="assets/lib/jquery/jquery.min.js"></script>
-
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="assets/lib/addthis/addthis_widget.js"></script>
-
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
 
     <!-- Boostrap -->
     <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css">
@@ -33,7 +31,6 @@
     <link href="assets/css/main.css" rel="stylesheet"/>
     <link href="assets/css/responsive.css" rel="stylesheet"/>
     <link rel="shortcut icon" href="assets/images/favicon.png"/>
-
 </head>
 
 <!-- Document Begin -->
@@ -43,7 +40,27 @@
 
     <section class="top">
             <div class="header">
-                <div id="global-nav" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nav-top">
+                <div class="top-info">
+                  <div class="container">
+                    <div class="col-lg-4 col-md-4 col-xs-4 col-sm-12 top-nav-home">
+                        <ul>
+                          <li class="on-top-nav">
+                            <a href="#">Khách sạn</a>
+                          </li>
+                          <li class="on-top-nav">
+                            <a href="#">Liên hệ</a>
+                          </li>
+                          <li class="on-top-nav">
+                            <a href="#">Về chúng tôi</a>
+                          </li>
+                          <li class="on-top-nav">
+                            <a href="#">Tiếng Việt</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nav-top">
                     <div class="container container-custom">
                         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 top-logo">
                             <div class="ic-topbar-white">
@@ -54,22 +71,7 @@
 
                         </div>
                         <div class="col-lg-11 col-md-11 col-sm-11 col-xs-12 nav-home">
-                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 top-nav-home">
-                              <ul>
-                                <li class="on-top-nav">
-                                  <a href="#">Khách sạn</a>
-                                </li>
-                                <li class="on-top-nav">
-                                  <a href="#">Liên hệ</a>
-                                </li>
-                                <li class="on-top-nav">
-                                  <a href="#">Về chúng tôi</a>
-                                </li>
-                                <li class="on-top-nav">
-                                  <a href="#">Tiếng Việt</a>
-                                </li>
-                              </ul>
-                            </div>
+
                             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 navigation-home">
                                 <ul>
                                   <li class="main-nav">
@@ -105,11 +107,7 @@
 </a>
                                     </li>
                                 </ul>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 btn-grreen">
-                                <a href="#" class="btn-green-left">
-                                  Đặt phòng
-                                </a>
+
                             </div>
                         </div>
 
@@ -167,14 +165,61 @@
   <!-- Slide open-->
     <section class="slide">
       <div class="slide-home">
+        <div class="popup-select-rooms">
+          <div class="container">
+            <div class="in-popup">
+            <form class="form book-now-form" role="form" id="widget_booking_form" name="widget_booking_form">
+              <div class="title-popups">
+                <h3 class="title-text">Đặt phòng tại Hải An Hotel</h3>
+              </div>
+              <div class="frame-select-rooms">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 datestart">
+                  <label for="check-in">Chọn ngày đến</label>
+                  <!-- <input type="textfield" class="form-control" id="check-in" placeholder="12.20.2014"> -->
+                  <input type="text"  class="form-control" id="start-date" name="start-date" placeholder="mm/dd/yyyy">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 dateend">
+                  <label for="check-out">Chọn ngày đi</label>
+                  <!-- <input type="textfield" class="form-control" id="check-out" placeholder="12.27.2014"> -->
+                  <input type="text" class="form-control" id="end-date" name="end-date" placeholder="mm/dd/yyyy" ><i class="fa fa-calendar" aria-hidden="true"></i>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 whyselect">
+                  <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 whyleft">
+                    <a href="#" class="btn-booking">Đặt phòng</a>
+                  </div>
+                  <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 whyright">
+                    <h5>Lý do chọn chúng tôi</h5>
+                    <ul>
+                      <li>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>Best rate guarantee
+                      </li>
+                      <li>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>Free wifi
+                      </li>
+                      <li>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>Exclusive Package
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </form>
+            </div>
+        </div>
         <div class="bxslider">
- <div><img src="assets/images/img-slide.jpg" /></div>
- <div><img src="assets/images/img-slide2.jpg" /></div>
-</div>
-      </div>
-      <div class="popup-select-rooms">
+           <div>
 
+             <img src="assets/images/img-slide.jpg" />
+           </div>
+           <div>
+
+             <img src="assets/images/img-slide2.jpg" />
+           </div>
+        </div>
       </div>
+
     </section>
 <!-- Slide close-->
 
@@ -200,19 +245,19 @@
 <!-- Intro close-->
 
 <!-- Services open-->
-<section>
+<section class="service-room">
   <div class="container">
   <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 model-services">
     <div class="text-services">
-      <h5 class="label">About us</h5>
-      <h3 class="title">Welcom to </br> Hai an Hotel</h3>
+      <h5 class="label">Services</h5>
+      <h3 class="title">Dịch vụ phòng nghỉ</h3>
     </div>
     <div class="list-rooms">
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 left">
         <div class="bg-white">
           <div class="img-room-left">
             <a href="#">
-              <img src="#" />
+              <img src="assets/images/room-large.jpg" />
             </a>
           </div>
           <div class="content-room-letf">
@@ -229,7 +274,7 @@
             <div class="bg-white">
               <a href="#">
                 <div class="content-single">
-                  <img src="#" />
+                  <img src="assets/images/1.jpg" />
                   <div class="text-in">
                     <p>
                       Signature rooms
@@ -243,7 +288,7 @@
             <div class="bg-white">
               <a href="#">
                 <div class="content-single">
-                  <img src="#" />
+                  <img src="assets/images/2.jpg" />
                   <div class="text-in">
                     <p>
                       Signature rooms
@@ -257,7 +302,7 @@
             <div class="bg-white">
               <a href="#">
                 <div class="content-single">
-                  <img src="#" />
+                  <img src="assets/images/3.jpg" />
                   <div class="text-in">
                     <p>
                       Signature rooms
@@ -271,7 +316,7 @@
             <div class="bg-white">
               <a href="#">
                 <div class="content-single">
-                  <img src="#" />
+                  <img src="assets/images/4.jpg" />
                   <div class="text-in">
                     <p>
                       Signature rooms
@@ -292,19 +337,20 @@
 
 <!-- Features open-->
 <section>
-  <div class="box-features">
-    <div class="left col-lg-6 col-sm-6 col-xs-12 ">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 box-features">
+    <div class="left col-lg-6 col-sm-6 col-xs-12 left ">
       <img src ="assets/images/img-tienich.jpg"/>
     </div>
-    <div class="rights col-lg-6 col-sm-6 col-xs-12 ">
+    <div class="rights col-lg-6 col-sm-6 col-xs-12 right">
       <div class="in-right">
         <h5 class="label">feartues</h5>
         <h3 class="title">Khám phá tiện nghi</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent imperdiet sapien id sapien ultricies vehicula. Nunc ac congue sapien. Cras rhoncus scelerisque pharetra. In ac scelerisque ante.
         </p>
+        <a href="#" class="btn-features">Thử ngay </a>
       </div>
-      <a href="#" class="btn-features">Thử ngay </a>
+
     </div>
   </div>
 </section>
@@ -313,26 +359,30 @@
 
 <!-- Contact open-->
 <section>
-  <div class="container">
-    <div class="box-contact">
-      <h5 class="label">Contact</h5>
-      <h3 class="title">Hai An hotel</h3>
-      <p>
-        179 Le Thanh Ton Street, Binh Thanh Disct, Ho Chi Minh City, Vietnam<br />
-        Emaii: support@haianhotel.com.vn <br />
-          Tel. (+84-28) 3823 9269 <br />
-      </p>
-    </div>
-    <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.1574235911858!2d105.84536565018267!3d21.02638619316726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab94163e3037%3A0xfb1f3e37fc5e76d5!2zVHJp4buHdSBRdeG7kWMgxJDhuqF0LCBUcuG6p24gSMawbmcgxJDhuqFvLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1514309662076" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-  </div>
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 box-contact">
+      <div class="container">
+        <div class="in-contact">
+          <h5 class="label">Contact</h5>
+          <h3 class="title">Hai An hotel</h3>
+          <p>
+            179 Le Thanh Ton Street, Binh Thanh Disct, Ho Chi Minh City, Vietnam<br />
+            Emaii: support@haianhotel.com.vn <br />
+              Tel. (+84-28) 3823 9269 <br />
+          </p>
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.1574235911858!2d105.84536565018267!3d21.02638619316726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab94163e3037%3A0xfb1f3e37fc5e76d5!2zVHJp4buHdSBRdeG7kWMgxJDhuqF0LCBUcuG6p24gSMawbmcgxJDhuqFvLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1514309662076" width="994" height="330" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+</div>
 </section>
 <!-- Contact close-->
 
 
 <!-- Footer open-->
-<section class="footer">
+<section>
+  <div class="footer col-lg-12 col-sm-12 col-md-12 col-xs-12">
+
   <div class="container">
     <div class="box-footer">
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ft-logo">
@@ -352,12 +402,16 @@
       </div>
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ft-ads">
         <h4>Khuyến mại<br />
-          <span></span>
+          <span>Nhập E-mail để nhận tin khuyến mại</span>
         </h4>
-        <input type="text" />
-        <a href="#">gửi</a>
+        <form>
+          <input type="text" placeholder="E-mail của bạn" />
+          <a href="#" class="btn-send-home">Gửi</a>
+        </form>
+
       </div>
     </div>
+  </div>
   </div>
 </section>
 <!-- Footer close-->
@@ -370,17 +424,20 @@
 <!-- Document JS ------------------------>
 <script type="text/javascript">
     $(function(){
-    $('.bxslider').bxSlider({
-      mode: 'fade',
-      captions: true,
-      slideWidth: 1920
-});
+
 
  });
 </script>
 
 <script type="text/javascript">
     $(document).ready(function () {
+
+      $('.bxslider').bxSlider({
+        mode: 'fade',
+        captions: true,
+        slideWidth: 1920
+  });
+
         var scrollTop = 0;
         $(window).scroll(function () {
             scrollTop = $(window).scrollTop();
@@ -394,11 +451,25 @@
 
         });
 
+        var dateToday = new Date();
+        var dates = $("#start-date, #end-date").datepicker({
+          defaultDate: "+2d",
+          changeMonth: true,
+          numberOfMonths: 1,
+          minDate: dateToday,
+          onSelect: function(selectedDate) {
+              var option = this.id == "start-date" ? "minDate" : "maxDate",
+              instance = $(this).data("datepicker"),
+              date = $.datepicker.parseDate(instance.settings.dateFormat || $.datepicker._defaults.dateFormat, selectedDate, instance.settings);
+              dates.not(this).datepicker("option", option, date);
+          }
+        });
+
     });
 </script>
 
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57e8109fe6250fb5"></script>
+
+
 </body>
 
 </html>
