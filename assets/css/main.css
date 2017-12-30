@@ -63,7 +63,8 @@ img {
 }
 
 button,
-input {
+input,
+select {
     outline: none;
 }
 
@@ -233,7 +234,18 @@ padding-bottom: 27px;
 .navigation-home{
   padding-left:54px;
 }
-.top-nav-home ul li,
+.top-nav-home ul li{
+  padding-right: 22px;
+  float:left;
+}
+.top-nav-home ul li .btn{
+  padding:0px;}
+.top-nav-home ul li .dropdown-item{
+  padding: 10px 0px 10px 10px;
+}
+.top-nav-home ul li a .fa-caret-down{
+  padding-left:5px;
+}
 .navigation-home ul li{
   float:left;
   padding-right: 31px;
@@ -277,6 +289,9 @@ font-size: 19px;
 .on-top-nav a{
   font-size:13px;
   color:#676767;
+}
+.on-top-nav a:hover{
+  color: #d49101;
 }
 .model-intro .left{
   text-align: center;
@@ -493,12 +508,36 @@ font-weight: 300;
 }
 .ft-ads form a{
   background-color: #d49100;
-color: #fff;
-padding: 10px 16px 7px 16px;
-font-size: 14px;
-margin-left: -3px;
+  color: #fff;
+  padding: 8px 16px 9px 16px;
+  font-size: 14px;
+  margin-left: -5px;
 }
 
+/*Booking pages*/
+.booking-wr ul li select{
+  width: 70%;
+  height: 31px;
+}
+.booking-wr ul li label{
+  float: left;
+  padding: 10px 0px;
+  font-size: 14px;
+}
+.whyleft .booking-wr{
+  margin: 20px auto;
+  padding: 10px 20px;
+}
+.cover-booking{
+  height: 329px;
+  background: url("../images/cover-booking.jpg") no-repeat center center;
+}
+.popup-cover{
+  margin-top:72px !important;
+}
+.result-booking{
+  padding:0px 84px;
+}
 /** ElegantIcons **/
 @font-face {
     font-family: 'ElegantIcons';
