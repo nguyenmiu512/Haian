@@ -461,10 +461,13 @@ margin-top: 29px;
 .list-result .result-item{
   margin: 10px 0px 50px 0px;
 }
+.info-booking{
+  border-bottom:1px solid #ececec;
+}
 .info-booking .left,
 .info-booking .right{
   padding:16px 0px;
-  border-bottom:1px solid #ececec;
+
 }
 .info-booking .left .para,
 .info-booking .right .price
