@@ -1,13 +1,14 @@
 /* preloader */
-.loading-container {
-    position: fixed;
-    background-color: #f9f9f9;
-    z-index: 999999999;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    cursor: wait;
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url("../images/loader2.gif") center no-repeat #fff;
 }
 
 /* CSS Document */
@@ -456,9 +457,121 @@ margin-top: 29px;
   text-transform: uppercase;
   color:#000000;
 }
-
-
-
+/****** Booking open ******/
+.list-result .result-item{
+  margin: 10px 0px 50px 0px;
+}
+.info-booking .left,
+.info-booking .right{
+  padding:16px 0px;
+  border-bottom:1px solid #ececec;
+}
+.info-booking .left .para,
+.info-booking .right .price
+{
+  display: inline;
+  font-size: 14px;
+  font-weight: 300;
+  padding-right:20px;
+}
+.info-booking .right .price{
+  float:right;
+}
+.info-booking .left .para span,
+.info-booking .right .price span{
+  font-weight: 500;
+  padding-left: 6px;
+}
+.show-result .title-show-result{
+  text-align: center;
+  margin: 30px 0px;
+  font-weight: 300;
+}
+.show-result .title-show-result span{
+  color:#d08500;
+}
+.link-img-result{
+  display: block;
+  width: 408px;
+  height: 232px;
+  overflow: hidden;
+}
+.link-img-result img{
+  width: 100%;
+}
+.text-result{
+  padding-left:0px;
+}
+.text-result .top h3{
+  font-weight: 300;
+  font-size: 24px;
+  margin-top:0px;
+}
+.text-result .top p{
+  color:#8d8d8d;
+  font-size: 14px;
+}
+.img-result{
+  padding-right:0px;
+}
+.view-more{
+  padding: 9px 14px;
+  border: 1px solid #000000;
+  margin-top: 20px;
+  display: table;
+  color: #000000;
+  font-size: 14px;
+}
+.text-result .bottom .price{
+  display: block;
+  line-height: 1;
+  font-size: 12px;
+}
+.text-result .bottom h3{
+  margin:0px;
+  display: inline-block;
+  line-height: 1;
+  font-size: 30px;
+}
+.text-result .bottom{
+  padding-top:55px;
+}
+.text-result .bottom .bt-select-room{
+  display: inline-block;
+  float: right;
+  padding-top: 5px;
+}
+.text-result .bottom .bt-select-room .btn-select{
+  padding:8px 50px;
+  background-color: #d08500;
+  color:#fff;
+  font-size: 14px;
+}
+.text-result .in-bottom{
+  padding-left:0px;
+  display: inline-block;
+  line-height: 1;
+}
+.text-result .bottom .in-bottom .time{
+  display: block;
+}
+.text-result .in-bottom h3{
+  margin: 0px;
+  color: #000;
+  font-weight: 500;
+  font-size: 26px;
+}
+.text-result .in-bottom span{
+  font-weight: 300;
+  font-size:13px;
+}
+.pagi-booking{
+  text-align: center;
+}
+.pagi-booking .pagination .page-link{
+  border: 1px solid #ececec;
+  color:#6f6f6f;
+}
 /****** Footer open ******/
 .footer{
   background-color: #08090b;

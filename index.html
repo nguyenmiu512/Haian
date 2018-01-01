@@ -11,12 +11,21 @@
     <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
     <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
 
+
     <!-- Boostrap -->
     <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css">
     <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- bxSlider Javascript file -->
     <script src="assets/lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <script>
+		// Wait for window load
+    $(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+	</script>
+    </script>
     <!-- bxSlider CSS file -->
     <link href="assets/lib/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
 
@@ -36,8 +45,8 @@
 <!-- Document Begin -->
 
 <body>
+  <div class="se-pre-con"></div>
 <div class="wrapper" id="home">
-
     <section class="top">
             <div class="header">
                 <div class="top-info">
@@ -60,7 +69,7 @@
                               </a>
 
                               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">English</a>                                
+                                <a class="dropdown-item" href="#">English</a>
                               </div>
                             </div>
 
@@ -185,13 +194,13 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 datestart">
                   <label for="check-in">Chọn ngày đến</label>
                   <!-- <input type="textfield" class="form-control" id="check-in" placeholder="12.20.2014"> -->
-                  <input type="text"  class="form-control" id="start-date" name="start-date" placeholder="mm/dd/yyyy">
+                  <input type="text"  class="form-control" id="start-date" name="start-date" placeholder="ngày/tháng/năm">
                   <i class="fa fa-calendar" aria-hidden="true"></i>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 dateend">
                   <label for="check-out">Chọn ngày đi</label>
                   <!-- <input type="textfield" class="form-control" id="check-out" placeholder="12.27.2014"> -->
-                  <input type="text" class="form-control" id="end-date" name="end-date" placeholder="mm/dd/yyyy" ><i class="fa fa-calendar" aria-hidden="true"></i>
+                  <input type="text" class="form-control" id="end-date" name="end-date" placeholder="ngày/tháng/năm" ><i class="fa fa-calendar" aria-hidden="true"></i>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 whyselect">
                   <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 whyleft">
@@ -465,6 +474,7 @@
           defaultDate: "+2d",
           changeMonth: true,
           numberOfMonths: 1,
+          dateFormat: 'dd-m-yy',
           minDate: dateToday,
           onSelect: function(selectedDate) {
               var option = this.id == "start-date" ? "minDate" : "maxDate",

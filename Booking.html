@@ -17,6 +17,13 @@
 
     <!-- bxSlider Javascript file -->
     <script src="assets/lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <script>
+  		// Wait for window load
+      $(window).load(function() {
+  		// Animate loader off screen
+  		$(".se-pre-con").fadeOut("slow");;
+  	});
+  	</script>
     <!-- bxSlider CSS file -->
     <link href="assets/lib/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
 
@@ -36,6 +43,7 @@
 <!-- Document Begin -->
 
 <body>
+  <div class="se-pre-con"></div>
 <div class="wrapper" id="home">
 
     <section class="top">
@@ -52,7 +60,7 @@
                           </li>
                           <li class="on-top-nav">
                             <a href="#">Về chúng tôi</a>
-                          </li>q
+                          </li>
                           <li class="on-top-nav">
                             <div class="dropdown show">
                               <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -182,13 +190,13 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 datestart">
                   <label for="check-in">Chọn ngày đến</label>
                   <!-- <input type="textfield" class="form-control" id="check-in" placeholder="12.20.2014"> -->
-                  <input type="text"  class="form-control" id="start-date" name="start-date" placeholder="mm/dd/yyyy">
+                  <input type="text"  class="form-control" id="start-date" name="start-date" placeholder="ngày/tháng/năm">
                   <i class="fa fa-calendar" aria-hidden="true"></i>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 dateend">
                   <label for="check-out">Chọn ngày đi</label>
                   <!-- <input type="textfield" class="form-control" id="check-out" placeholder="12.27.2014"> -->
-                  <input type="text" class="form-control" id="end-date" name="end-date" placeholder="mm/dd/yyyy" ><i class="fa fa-calendar" aria-hidden="true"></i>
+                  <input type="text" class="form-control" id="end-date" name="end-date" placeholder="ngày/tháng/năm"><i class="fa fa-calendar" aria-hidden="true"></i>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 whyselect">
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 whyright booking-wr">
@@ -469,19 +477,19 @@
   <div class="container">
   <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 result-booking">
     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 info-booking">
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 left">
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 left">
         <p class="para">
-          Thông tin chọn phòng của bạn
+          Thông tin chọn phòng của bạn:
           <span>26/12/2017 - 02/01/2018</span>
         </p>
         <p class="para">
-          Khách
+          Khách:
           <span>1 người lớn</span>
         </p>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 right">
         <p class="price">
-          Tỷ giá
+          Tỷ giá:
           <span>Việt Nam Đồng</span>
         </p>
       </div>
@@ -493,8 +501,8 @@
         được tìm thấy
       </h3>
     </div>
-    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 list-result" id="show-list-reslut">
-      <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 reslut-item">
+    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 list-result" id="show-list-result">
+      <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 result-item">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 img-result">
             <a href="#" class="link-img-result">
               <img src="assets/images/list-result1.jpg" />
@@ -512,21 +520,19 @@
               </a>
             </div>
             <div class="bottom">
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <span>Giá</span>
+                <span class="price">Giá</span>
                 <h3>3.145.490</h3>
+              <div class="in-bottom">
+                <span class="time">VND/Đêm</span>
+                <span class="note">Không bao gồm thuế phí</span>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <span>VND/Đêm</span>
-                <h3>Không bao gồm thuế phí</h3>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <a href="btn-select">Chọn</a>
+              <div class="bt-select-room">
+                <a href=# class="btn-select">Chọn</a>
               </div>
             </div>
         </div>
       </div>
-      <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 reslut-item">
+      <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 result-item">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 img-result">
             <a href="#" class="link-img-result">
               <img src="assets/images/list-result2.jpg" />
@@ -544,21 +550,19 @@
               </a>
             </div>
             <div class="bottom">
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <span>Giá</span>
+                <span class="price">Giá</span>
                 <h3>3.145.490</h3>
+              <div class="in-bottom">
+                <span class="time">VND/Đêm</span>
+                <span class="note">Không bao gồm thuế phí</span>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <span>VND/Đêm</span>
-                <h3>Không bao gồm thuế phí</h3>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <a href="btn-select">Chọn</a>
+              <div class="bt-select-room">
+                <a href=# class="btn-select">Chọn</a>
               </div>
             </div>
         </div>
       </div>
-      <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 reslut-item">
+      <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 result-item">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 img-result">
             <a href="#" class="link-img-result">
               <img src="assets/images/list-result3.jpg" />
@@ -576,21 +580,19 @@
               </a>
             </div>
             <div class="bottom">
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <span>Giá</span>
+                <span class="price">Giá</span>
                 <h3>3.145.490</h3>
+              <div class="in-bottom">
+                <span class="time">VND/Đêm</span>
+                <span class="note">Không bao gồm thuế phí</span>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <span>VND/Đêm</span>
-                <h3>Không bao gồm thuế phí</h3>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <a href="btn-select">Chọn</a>
+              <div class="bt-select-room">
+                <a href=# class="btn-select">Chọn</a>
               </div>
             </div>
         </div>
       </div>
-      <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 reslut-item">
+      <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 result-item">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 img-result">
             <a href="#" class="link-img-result">
               <img src="assets/images/list-result4.jpg" />
@@ -608,34 +610,33 @@
               </a>
             </div>
             <div class="bottom">
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <span>Giá</span>
+                <span class="price">Giá</span>
                 <h3>3.145.490</h3>
+              <div class="in-bottom">
+                <span class="time">VND/Đêm</span>
+                <span class="note">Không bao gồm thuế phí</span>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <span>VND/Đêm</span>
-                <h3>Không bao gồm thuế phí</h3>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <a href="btn-select">Chọn</a>
+              <div class="bt-select-room">
+                <a href=# class="btn-select">Chọn</a>
               </div>
             </div>
         </div>
       </div>
-      
-      <div class="pagination">
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
+      <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 pagi-booking">
+        <div class="pagination">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
 
+    </div>
   </div>
 </div>
 </section>
@@ -743,6 +744,7 @@
           defaultDate: "+2d",
           changeMonth: true,
           numberOfMonths: 1,
+          dateFormat: 'dd-m-yy',
           minDate: dateToday,
           onSelect: function(selectedDate) {
               var option = this.id == "start-date" ? "minDate" : "maxDate",
