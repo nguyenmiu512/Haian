@@ -754,12 +754,99 @@ font-weight: 300;
   height: 329px;
   background: url("../images/cover-booking.jpg") no-repeat center center;
 }
+.cover-event-rooms{
+	height: 329px;
+  background: url("../images/cover-eventroom.jpg") no-repeat center center;
+}
 .popup-cover{
   margin-top:72px !important;
 }
 .result-booking{
   padding:0px 84px;
 }
+.navigation-home ul .float-left{
+	float:right;
+}
+.navigation-home ul .float-left a{
+	color:#000;;
+	background-color: #d49100;
+	padding:10px 20px;
+	transition: color 0.5s ease;
+}
+.navigation-home ul .float-left a:hover{
+	background-color: #fff;
+	color:#000;
+	padding:10px 20px;
+}
+
+/**Event-room open**/
+.in-event-rooms .cover-top{
+	text-align: center;
+	color:#fff;
+	padding:54px 180px 0px 180px;
+}
+.in-event-rooms .cover-top h3{
+	font-weight: 300;
+	font-size:32px;
+	letter-spacing: 6px;
+
+}
+.in-event-rooms .cover-top p{
+	font-weight: 300;
+	line-height: 26px;
+	padding-top: 14px;
+}
+.eventroom-breadcrumbs{
+	background-color: #000;
+	padding: 12px 0px;
+}
+.eventroom-breadcrumbs ul li{
+	float:left;
+	padding-right:10px;
+}
+.eventroom-breadcrumbs ul li a{
+	color:#898074;
+	font-size: 14px;
+}
+.eventroom-breadcrumbs ul li a .fa-arrow-right{
+	padding-left:10px;
+}
+.in-content-eventrooms{
+	margin-top:48px;
+}
+.eventrooms-in .left{
+	text-align: center;
+	padding: 36px 60px;
+}
+.eventrooms-in .left .label-eventroom{
+	font-size: 12px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #ececec;
+	padding-bottom: 12px;
+}
+.eventrooms-in .left .title-eventroom{
+	font-weight: 300;
+	font-size: 20px;
+}
+.eventrooms-in .left .text-eventroom{
+	font-weight: 300;
+	font-size: 14px;
+	margin-top: 37px;
+	line-height: 26px;
+}
+.eventrooms-in .right .link-img,
+.eventrooms-in .left .link-img{
+	display: block;
+	width: 556px;
+	height: 324px;
+	overflow: hidden;
+}
+.eventrooms-in .right .link-img img,
+.eventrooms-in .left .link-img img{
+	width: 100%;
+}
+/**Event-room close**/
 /** ElegantIcons **/
 @font-face {
     font-family: 'ElegantIcons';
