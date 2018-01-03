@@ -192,7 +192,8 @@ z-index: 1;
 .slide{
   margin-top:78px;
 }
-.navigation-home ul li:hover a{
+.navigation-home ul li:hover a,
+.navigation-home ul li.active a{
   color: #d49101;
 border-bottom: 1px solid #d49101;
 padding-bottom: 9px;
@@ -436,7 +437,7 @@ margin-top: 29px;
   text-align: center;
 }
 .box-contact .in-contact{
-  padding: 120px 0px 28px 0px;
+  padding: 100px 0px 28px 0px;
 }
 .room-single .single{
   overflow: hidden;
@@ -570,6 +571,7 @@ margin-top: 29px;
 }
 .pagi-booking{
   text-align: center;
+	padding-top: 14px;
 }
 .pagi-booking .pagination .page-link{
   border: 1px solid #ececec;
@@ -758,6 +760,10 @@ font-weight: 300;
 	height: 329px;
   background: url("../images/cover-eventroom.jpg") no-repeat center center;
 }
+.cover-album{
+	height: 329px;
+  background: url("../images/cover-album.jpg") no-repeat center center;
+}
 .popup-cover{
   margin-top:72px !important;
 }
@@ -780,12 +786,12 @@ font-weight: 300;
 }
 
 /**Event-room open**/
-.in-event-rooms .cover-top{
+.cover-top{
 	text-align: center;
 	color:#fff;
 	padding:54px 180px 0px 180px;
 }
-.in-event-rooms .cover-top h3{
+.cover-top h3{
 	font-weight: 300;
 	font-size:32px;
 	letter-spacing: 6px;
@@ -847,6 +853,41 @@ font-weight: 300;
 	width: 100%;
 }
 /**Event-room close**/
+
+
+/**Album open **/
+.tab-album{
+	text-align: center;
+}
+.tab-album ul li{
+	display: inline-block;
+	padding:10px 14px 10px 14px;
+}
+.tab-album ul{
+	padding:20px 0px 10px 0px;
+}
+.tab-album ul li a{
+	color: #b2b2b2;
+	font-weight: 300;
+}
+.tab-album ul li .active{
+	color:#000000;
+	border-bottom: 1px solid #000000;
+	padding-bottom: 3px;
+}
+.list-album-item{
+	padding:10px;
+}
+.list-album-item a{
+	display: block;
+	width: 350px;
+	height: 226px;
+	overflow: hidden;
+}
+.list-album-item a img{
+	width: 100%;
+}
+/**Album close **/
 /** ElegantIcons **/
 @font-face {
     font-family: 'ElegantIcons';
