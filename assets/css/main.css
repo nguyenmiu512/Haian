@@ -764,6 +764,10 @@ font-weight: 300;
 	height: 329px;
   background: url("../images/cover-album.jpg") no-repeat center center;
 }
+.cover-room{
+	height: 329px;
+  background: url("../images/cover-room.jpg") no-repeat center center;
+}
 .popup-cover{
   margin-top:72px !important;
 }
@@ -795,7 +799,11 @@ font-weight: 300;
 	font-weight: 300;
 	font-size:32px;
 	letter-spacing: 6px;
-
+}
+.cover-top p{
+	font-weight: 300;
+	line-height: 28px;
+	padding-top: 6px;
 }
 .in-event-rooms .cover-top p{
 	font-weight: 300;
@@ -888,6 +896,52 @@ font-weight: 300;
 	width: 100%;
 }
 /**Album close **/
+
+
+
+/*Room open*/
+.list-room-item{
+	padding: 0px 20px;
+	margin: 36px 0px;
+}
+.list-room-item .top{
+	overflow: hidden;
+}
+.list-room-item .top .link-img{
+	display: block;
+	width: 350px;
+	height:226px;
+	overflow: hidden;
+}
+.list-room-item .top .link-img img{
+	width: 100%;
+}
+.list-room-item .bottom h3{
+	font-size: 20px;
+	font-weight: 300;
+	display: inline-block;
+	margin: 21px 0px;
+}
+.list-room-item .bottom span{
+	float: right;
+	padding-top: 27px;
+	font-size: 13px;
+	color: #e89207;
+}
+.list-room-item .bottom .para{
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 25px;
+}
+.list-room-item .bottom .btn-booking{
+	display: table;
+	border: 1px solid #c5c5c5;
+	color: #383838;
+	font-size: 14px;
+	padding: 4px 20px;
+	margin: 25px 0px;
+}
+/*Room close*/
 /** ElegantIcons **/
 @font-face {
     font-family: 'ElegantIcons';
