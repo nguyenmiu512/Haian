@@ -1111,7 +1111,14 @@ float: right;
 }
 /*Detail close*/
 
-
+/** Modal**/
+.modal .modal-body .item-room .img-item-room{
+	display: block;
+	overflow: hidden;
+}
+.modal  .modal-body .item-room .img-item-room img{
+	width: 100%;
+}
 
 /** ElegantIcons **/
 @font-face {
