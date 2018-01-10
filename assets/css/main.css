@@ -439,6 +439,19 @@ margin-top: 29px;
 .box-contact .in-contact{
   padding: 100px 0px 28px 0px;
 }
+.box-contact .in-contact ul li{
+	display: inline-block;
+	padding:10px 10px 0px 0px;
+}
+.box-contact .in-contact ul li a{
+	width: 52px;
+	height: 52px;
+	display: block;
+	overflow: hidden;
+}
+.box-contact .in-contact ul li a img{
+	width: 100%;
+}
 .room-single .single{
   overflow: hidden;
   padding: 18px 32px;
@@ -844,7 +857,8 @@ font-weight: 300;
 	font-weight: 300;
 	font-size: 20px;
 }
-.eventrooms-in .left .text-eventroom{
+.eventrooms-in .left .text-eventroom,
+.content-promotion span{
 	font-weight: 300;
 	font-size: 14px;
 	margin-top: 37px;
@@ -917,13 +931,19 @@ font-weight: 300;
 .list-room-item .top .link-img img{
 	width: 100%;
 }
-.list-room-item .bottom h3{
+.list-room-item .bottom h3,
+.content-promotion h3{
 	font-size: 20px;
 	font-weight: 300;
 	display: inline-block;
 	margin: 21px 0px;
 }
-.list-room-item .bottom h3 a{
+.content-promotion h3{
+	display: block !important;
+	margin: 10px 0px;
+}
+.list-room-item .bottom h3 a,
+.content-promotion h3{
 	color:#000;
 }
 .list-room-item .bottom span{
