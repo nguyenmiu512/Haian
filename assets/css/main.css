@@ -464,6 +464,7 @@ margin-top: 29px;
 }
 .info-booking{
   border-bottom:1px solid #ececec;
+	padding-left: 0px;
 }
 .info-booking .left,
 .info-booking .right{
@@ -902,7 +903,7 @@ font-weight: 300;
 /*Room open*/
 .list-room-item{
 	padding: 0px 20px;
-	margin: 36px 0px;
+	margin: 36px 0px 0px 0px;
 }
 .list-room-item .top{
 	overflow: hidden;
@@ -921,6 +922,9 @@ font-weight: 300;
 	font-weight: 300;
 	display: inline-block;
 	margin: 21px 0px;
+}
+.list-room-item .bottom h3 a{
+	color:#000;
 }
 .list-room-item .bottom span{
 	float: right;
