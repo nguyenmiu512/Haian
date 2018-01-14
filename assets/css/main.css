@@ -1119,7 +1119,51 @@ float: right;
 .modal  .modal-body .item-room .img-item-room img{
 	width: 100%;
 }
-
+.modal-dialog{
+	width: 800px;
+}
+.modal-header{
+	text-align: center;
+	font-size: 24px;
+	font-weight: 300;
+}
+.modal-footer{
+	border-top: none !important;
+}
+.img-item-room{
+	display: block;
+	overflow: hidden;
+	width: 216px;
+	height: 139px;
+}
+.bxslider-mobile{
+	display: none;
+}
+.img-item-room img {
+	width: 100%;
+}
+.item-room ul{
+	margin:20px 0px !important;
+	padding: 0px 6px;
+}
+.item-room ul li{
+	margin-top:10px;
+}
+.item-room ul li span{
+	font-size: 14px;
+}
+.item-room ul li span .fa-circle{
+	font-size: 9px;
+	padding-right: 10px;
+}
+.item-room ul li .booking-item-room{
+	display: block;
+	background-color: #000;
+	color: #fff;
+	padding: 12px 10px;
+	text-align: center;
+	font-size: 14px;
+}
 /** ElegantIcons **/
 @font-face {
     font-family: 'ElegantIcons';

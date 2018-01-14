@@ -51,7 +51,7 @@
             <div class="header">
                 <div class="top-info">
                   <div class="container">
-                    <div class="col-lg-4 col-md-4 col-xs-4 col-sm-12 top-nav-home">
+                    <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 top-nav-home">
                         <ul>
                           <li class="on-top-nav">
                             <a href="#">Khách sạn</a>
@@ -151,22 +151,28 @@
                                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                         <ul class="nav navbar-nav navbar-custom">
                                             <li>
-                                                <a href="#">House Types
+                                                <a href="#">Trang chủ
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#">About us
+                                                <a href="#">Phòng nghỉ
                                                 </a>
                                             </li>
 
                                             <li>
-                                              <a href="#">Inspiration</a>
+                                              <a href="#">Ẩm thực</a>
                                             </li>
                                             <li>
-                                              <a href="#">Go Green</a>
+                                              <a href="#">Hội nghị</a>
                                             </li>
                                             <li>
-                                              <a href="#">Dealers</a>
+                                              <a href="#">Tiện nghi</a>
+                                            </li>
+                                            <li>
+                                              <a href="#">Khuyến mại</a>
+                                            </li>
+                                            <li>
+                                              <a href="#">Hình ảnh</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -227,6 +233,15 @@
             </div>
         </div>
         <div class="bxslider">
+           <div>
+             <img src="assets/images/img-slide.jpg" />
+           </div>
+           <div>
+
+             <img src="assets/images/img-slide2.jpg" />
+           </div>
+        </div>
+        <div class="bxslider-mobile">
            <div>
              <img src="assets/images/img-slide.jpg" />
            </div>
@@ -451,17 +466,11 @@
 
 
 <!-- Document JS ------------------------>
-<script type="text/javascript">
-    $(function(){
-
-
- });
-</script>
 
 <script type="text/javascript">
     $(document).ready(function () {
 
-      $('.bxslider').bxSlider({
+      $('.bxslider-mobile').bxSlider({
         mode: 'fade',
         captions: true,
         slideWidth: 1920
