@@ -302,7 +302,8 @@
 .form-item,
 .tab-album,
 .list-album,.detail-room .left,
-.detail-room .text-info{
+.detail-room .text-info,
+.list-result{
   padding:0px;
 }
 .btn-agree-booking .in-agree-booking{
@@ -342,9 +343,60 @@
   top:117px;
 }
 
-
-
-
+.list-room-item .top .link-img{
+  width: 100%;
+  height: auto;
+}
+.list-room-item{
+  padding:0px;
+  margin-top:20px;
+}
+.in-content-room .list-room{
+  padding:0px;
+}
+.link-img-result{
+  width: 100%;
+  height: auto;
+}
+.img-result{
+  padding:10px 0px;
+}
+.text-result .in-bottom{
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+.text-result .bottom h3{
+  margin: 10px 0px;
+  display: block;
+  text-align: center;
+  font-size: 42px;
+}
+.text-result .bottom .price{
+  text-align: center;
+}
+.text-result .bottom .bt-select-room{
+  display: block;
+  float: inherit;
+}
+.text-result .bottom .bt-select-room .btn-select{
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.text-result .bottom{
+  padding-top:23px;
+}
+.list-result .result-item{
+  margin: 10px 0px 29px 0px;
+}
+.modal-dialog{
+  width: auto;
+}
+.modal-header .close{
+  margin-top: -75px;
+  font-size: 44px;
+}
 
 
 
@@ -558,6 +610,7 @@ margin-top: 600px;
 }
 .view-more{
   margin-left: 0px;
+  display: block;
 }
 /* CASE close*/
 
