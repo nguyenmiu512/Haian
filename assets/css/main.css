@@ -389,6 +389,8 @@ font-size: 19px;
 .content-room-letf p{
   font-size: 14px;
   margin-top: 14px;
+	height: 80px;
+	overflow: hidden;
 }
 .single a{
   width: 277px;

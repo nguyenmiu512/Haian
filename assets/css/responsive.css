@@ -253,9 +253,108 @@
 .same-pj .item-pj{
   margin:10px 0px;
 }
-.dashboard-block .dashboard-block-chart{
+.cover-top,
+#sub-home .top-nav-home{
+  padding: 0px;
+}
+#sub-home .slide{
+  margin-top:0px;
+}
+#sub-home .cover-top h3{
+  margin-top: 48px;
+}
+#sub-home .in-content-eventrooms {
   margin-top: 0px;
 }
+.eventrooms-in .left{
+  padding: 20px 0px;
+}
+.eventrooms-in .right .link-img, .eventrooms-in .left .link-img{
+  width: 100%;
+  height: auto;
+}
+#sub-home .popup-cover{
+  margin-top: 0px !important;
+  padding-top: 39px;
+}
+#sub-home .result-booking{
+  margin-top: 118px;
+  padding:0px;
+}
+.info-booking .right{
+  text-align: center;
+}
+.info-booking .right .price{
+  float:inherit;
+  width: 100%;
+}
+.info-booking .left .para, .info-booking .right .price{
+  text-align: center;
+  display: block;
+}
+.info-booking .left .para span, .info-booking .right .price span{
+  display: block;
+}
+.info-personal input, .info-payment input, .info-payment select{
+  border:1px solid #dedede;
+  width: 100%;
+}
+.form-item,
+.tab-album,
+.list-album,.detail-room .left,
+.detail-room .text-info{
+  padding:0px;
+}
+.btn-agree-booking .in-agree-booking{
+  margin-top:0px;
+}
+
+
+
+.list-album-item a{
+  width: 100%;
+  height: auto;
+}
+.tab-album ul li{
+  padding: 10px 11px;
+}
+.datestart-detail ul li select{
+  background-color: #fff;
+  width: 100%;
+  height: 36px;
+  margin: 6px 0px;
+}
+.list-room-item .bottom .btn-booking, .btn-booking, .btn-booking-bestroom{
+  display: block;
+  text-align: center;
+}
+.img-best-room .link-img-bestroom{
+  height: auto;
+}
+.detail-room .right .menu ul li,.title-info-detail, .detail-room .right .menu h3, .detail-room .right .bestroom h3, .other-rooms .title-other-rooms, .list-other-rooms .text-other h3 a{
+  text-align: center;
+  padding: 10px 2px;
+}
+.detail-room .right{
+  margin-top:20px;
+}
+.datestart-detail2 .fa-calendar{
+  top:117px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .sitefooter{
     }
     .top-link-back .ic-topbar a{
