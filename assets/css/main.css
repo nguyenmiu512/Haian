@@ -1166,6 +1166,16 @@ float: right;
 	text-align: center;
 	font-size: 14px;
 }
+.ft-ads ul li{
+		float:left;
+		margin:20px 34px 0px 0px;
+}
+.ft-ads ul li a{
+	color:#fff;
+}
+.ft-ads ul li a .fa{
+	font-size: 16px;
+}
 /** ElegantIcons **/
 @font-face {
     font-family: 'ElegantIcons';
