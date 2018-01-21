@@ -1166,6 +1166,25 @@ float: right;
 	text-align: center;
 	font-size: 14px;
 }
+.about{
+	padding-top:43px;
+}
+.time-services{
+	font-size: 41px;
+	color:#fff;
+	text-align: center;
+}
+.top-about .left{
+	text-align: justify;
+	padding: 36px 15px;
+	font-size: 14px;
+}
+.top-about .right .img-right{
+	padding-top:29px;
+}
+.other-rooms{
+	margin-top: 120px;
+}
 .ft-ads ul li{
 		float:left;
 		margin:20px 34px 0px 0px;

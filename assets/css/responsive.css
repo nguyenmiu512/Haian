@@ -406,7 +406,11 @@
 
 
 
-
+.ft-ads ul li{
+  display: inline-block;
+margin: 26px 15px;
+float: inherit;
+}
     .sitefooter{
     }
     .top-link-back .ic-topbar a{
