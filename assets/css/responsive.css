@@ -9,6 +9,9 @@
 .menu-mobile2{
   display: none;
 }
+.top-nav-home ul li {
+    padding-right: 11px;
+  }
 .box-dashboard .container .in-box-dashboard .dashboard-left{
   max-width: inherit;
   width: 48%;
@@ -108,6 +111,9 @@
   padding: 10px 35px;
 }
 
+.top-nav-home ul li {
+    padding-right: 11px;
+  }
 /*FOOTER*/
 .add-ft p{
   font-size: 12px;
@@ -552,7 +558,12 @@ padding-top: 20px;
 }
 /* INDEX close*/
 
-
+.menu-mobile  .navbar-logo-mobile{
+  background: url('../images/logo-mobile@2x.png') no-repeat 17px 1px;
+  background-size: 280px 70px;
+  display: block;
+  height: 70px;
+}
 
 /*LIBRARY open*/
 .box-library{
@@ -682,10 +693,10 @@ margin-top: 600px;
 only screen and (min-device-pixel-ratio: 2),
 screen and (-webkit-device-pixel-ratio: 1.5) {
     .menu-mobile  .navbar-logo-mobile{
-      background: url('../images/logo-mobile.png') no-repeat 17px 1px;
+      background: url('../images/logo-mobile@2x.png') no-repeat 17px 1px;
       background-size: 280px 70px;
       display: block;
-      height: 62px;
+      height: 70px;
     }
     input[type=search]{
       background: url('../images/ic-search@2x.png') no-repeat center 5px;
