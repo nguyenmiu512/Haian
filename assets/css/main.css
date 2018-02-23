@@ -116,7 +116,7 @@ margin-top:220px;
   background-color: #d49100;
   color: #fff;
   display: table;
-  padding: 7px 15px;
+	padding: 7px 28px;
   font-size: 14px;
   margin-top: 46px;
   transition: background-color 0.5s ease;©
@@ -192,10 +192,12 @@ z-index: 1;
 .slide{
   margin-top:78px;
 }
-.navigation-home ul li:hover a,
 .navigation-home ul li.active a{
+	border-bottom: 1px solid #d49101;
+	padding-bottom: 9px;
+}
+.navigation-home ul li:hover a{
   color: #d49101;
-border-bottom: 1px solid #d49101;
 padding-bottom: 9px;
 }
 .top-logo{
@@ -1195,6 +1197,60 @@ float: right;
 .ft-ads ul li a .fa{
 	font-size: 16px;
 }
+/** Update css 23.02 **/
+.top-info{
+	background-color: #000;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.main-nav {
+    position: relative;
+    display: inline-block;
+}
+
+.main-nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+		transition: color 0.5s ease;
+}
+
+.main-nav:hover .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd}
+
+.main-nav:hover .dropdown-content {
+    display: block;
+		top: 29px;
+}
+
+.main-nav:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.dropdown-item img,
+.top-nav-home ul li .btn img{
+	width: 16px;
+    height: 16px;
+    margin-right: 9px;
+    top: -2px;
+    position: relative;
+}
+
 /** ElegantIcons **/
 @font-face {
     font-family: 'ElegantIcons';
