@@ -150,6 +150,7 @@
 .popup-select-rooms{
   position: inherit;
   margin-top: 0px;
+  padding-top: 11px;
 }
 .model-intro .left{
   padding:0px;
@@ -194,6 +195,23 @@
   padding:17px 0px;
 }
 
+.lang-mobile{
+  background-color: #fff;
+  height: 40px;
+  padding-top: 10px;
+  text-align: center;
+}
+.lang-mobile ul li{
+  float:left;
+  width: 48%;
+}
+.lang-mobile ul li .active{
+  color: #e89207 !important;
+}
+.lang-mobile ul li a{
+  color: #d8d8d8;
+  font-weight: 100;
+}
 
   .navbar-nav>li>.dropdown-menu{
     position: static;
@@ -237,7 +255,10 @@
       height: 80px;
     }
   .navbar-header-mobile{
-    padding: 15px 2px;
+    padding: 0px 2px;
+  }
+  .navbar-toggle{
+    
   }
 .header{
   background-size: cover;
